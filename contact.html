@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="Chrissy Hughes" />
+    <title>About</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="./bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="script.js"></script>
+  </head>
+
+  <body class="text-center" id="contact">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <img
+            src="./contact-logo-01.svg"
+            height="100"
+            width="100"
+          />
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="./index.html">Home</a>
+            <a class="nav-link" href="./about.html">About</a>
+            <a class="nav-link" href="./venue.html">Venue</a>
+            <a class="nav-link active" href="./contact.html">Contact</a>
+            <a class="nav-link" href="./tickets.html">Tickets</a>
+            <a class="nav-link" href="https://twitter.com/"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a class="nav-link" href="https://www.facebook.com/"
+              ><i class="fa fa-facebook"></i
+            ></a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <div class="container">
+          <form action="action_page.php">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="ireland">Ireland</option>
+              <option value="northern ireland">Northern Ireland</option>
+              <option value="united kingdom">United Kingdom</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height:200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <form class="form-inline" style="display: block">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Email"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

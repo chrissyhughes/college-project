@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="Chrissy Hughes" />
+    <title>About</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="./bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="script.js"></script>
+  </head>
+
+  <body class="text-center" id="tickets">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <img
+            src="./tickets-logo-01.svg"
+            height="100"
+            width="100"
+          />
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="./index.html">Home</a>
+            <a class="nav-link" href="./about.html">About</a>
+            <a class="nav-link" href="./venue.html">Venue</a>
+            <a class="nav-link" href="./contact.html">Contact</a>
+            <a class="nav-link active" href="./tickets.html">Tickets</a>
+            <a class="nav-link" href="https://twitter.com/"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a class="nav-link" href="https://www.facebook.com/"
+              ><i class="fa fa-facebook"></i
+            ></a>
+          </nav>
+        </div>
+
+        <script src="https://www.eventbrite.ie/static/widgets/eb_widgets.js"></script>
+      </header>
+
+      <main role="main" class="inner cover">
+        <div id="eventbrite-widget-container-90536582355"></div>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <form class="form-inline" style="display: block">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Email"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript">
+      var exampleCallback = function() {
+        console.log("Order complete!");
+      };
+
+      window.EBWidgets.createWidget({
+        // Required
+        widgetType: "checkout",
+        eventId: "90536582355",
+        iframeContainerId: "eventbrite-widget-container-90536582355",
+
+        // Optional
+        iframeContainerHeight: 425, // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback // Method called when an order has successfully completed
+      });
+    </script>
+  </body>
+</html>
